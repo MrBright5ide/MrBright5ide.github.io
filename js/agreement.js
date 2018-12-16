@@ -8,7 +8,7 @@ msg += '</p>';
 
 
 msg += '<p>';
-msg += 'By clicking \"I Agree\" below, you agree that you will not take any ideas listed on this domain and/or pass them off as your own, or attempt to make a lawsuit against the owner of this website for \'copyright\' infringement unless such copyright is proven to have existed before these ideas were conceieved by the party known as \"Ice Climb Games\".';
+msg += 'By clicking \"I Agree\" below, you agree that you will not take any ideas listed on this domain and/or pass them off as your own, or attempt to make a lawsuit against the owner of this website for \'copyright\' infringement unless such copyright is proven to have existed before these ideas were conceieved by the party known as \"Spinefrost Studios\".';
 msg += '</p>';
 msg += '<ul><li><a id=\'agree\' href=\"#\">I Agree</a></li><li><a href=\"../index.html\">I Do Not Agree</a></li></ul></div>';
 
