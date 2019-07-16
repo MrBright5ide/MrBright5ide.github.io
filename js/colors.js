@@ -1,34 +1,35 @@
 //SECTION 1 - THE SECTION THAT RANDOMLY GENERATES A COLOR TO BE USED AS A BASE FOR THE SITE'S COLOR SCHEME
 
 //RED COLOR SECTION
-var red = Math.random() * 175; //Randomly generate a number and make it between 0 and 175
+var red = Math.random() * 255; //Randomly generate a number and make it between 0 and 175
+red = (red +255)/2;
 var realred = Math.round(red); //Remove the numbers after the decimal point
-
 //If the randomly generated number is less than 50 then add 100 to it
-if (realred < 100) {//If the randomly generated number is less than 50...
-    realred = realred + 100; //...Then add 100 to it
-}
+//if (realred < 100) {//If the randomly generated number is less than 50...
+//    realred = realred + 100; //...Then add 100 to it
+//}
 
 console.log("The red number is " + realred);//Tell me in the console what number you got
 
 //FOR COMMENTS ABOUT THE GENERATED GREEN AND BLUE NUMBERS, SEE THE RED SECTION, THEY HAVE THE SAME MATH APPLIED TO THEM
 
 //GREEN COLOR SECTION
-var green = Math.random() * 175; //Randomly generate a number and make it between 0 and 175
+var green = Math.random() * 255; //Randomly generate a number and make it between 0 and 175
+green = (green+255)/2;
 var realgreen = Math.round(green); //Remove to numbers after the decimal point
-
-if (realgreen < 100) {
-    realgreen = realgreen + 100;
-}
+//if (realgreen < 100) {
+//    realgreen = realgreen + 100;
+//}
 console.log("The green number is " + realgreen);
 
 //BLUE COLOR SECTION
-var blue = Math.random() * 175;
+var blue = Math.random() * 255;
+blue = (blue+255)/2;
 var realblue = Math.round(blue);
 
-if (realblue < 100) {
-    realblue = realblue + 100;
-}
+//if (realblue < 100) {
+//    realblue = realblue + 100;
+//}
 
 console.log("The blue number is" + " "  + realblue);
 console.log("");//I need a line break in the console to help view the data
@@ -42,13 +43,14 @@ if ((realred + realgreen + realblue) > 680) {
 }
 
 
-
+//Setting uo colors that I can use for styling the html
 var color = realred + "," + realgreen + "," + realblue; //Make the r,g,b number format for the main color that will be used later
 var lightercolor = (realred + 100) + "," + (realgreen + 100) + "," + (realblue + 100);
 var lightcolor = (realred + 50) + "," + (realgreen + 50) + "," + (realblue + 50);
 var lightishcolor = (realred + 25) + "," + (realgreen + 25) + "," + (realblue + 25);
 var darkercolor = (realred - 75) + "," + (realgreen - 75) + "," + (realblue - 75);
 var darkcolor = (realred - 100) + "," + (realgreen - 100) + "," + (realblue - 100);
+var opposite = (255-realred) + "," + (255-realgreen) + "," + (255-realblue);
 console.log("The RGB code is " + color); //Let me know that I did the previous line right in the console
 
 
@@ -70,7 +72,9 @@ css += "#note a{color:rgba(" + lightishcolor + ",1);}";
 css += "h3{color:rgba(" + lightcolor + ",1);}";
 css += ".gameList li{color:rgba(" + darkercolor + ",1);}";
 css += "a:hover{color:rgba(" + lightercolor + ",1);background-color:rgba(" + darkcolor + ",1);}";
-css += ".projtit{color:rgba(" + lightercolor + ",1);}</style>";
+css += ".projtit{color:rgba(" + lightercolor + ",1);}";
+css += "hr{color:rgba(" + lightcolor + ",1);}";
+css += ".here{color:rgba(" + opposite + ",1);}";
 
 css += "</style>";
 //SECTION 3 - THIS IS THE SECTION THAT WILL WRITE IT OUT TO THE HTML FILE
