@@ -2,12 +2,13 @@
 #skills{
 	line-height:2em;
 }
-#skills ul{
-	list-style-type: circle;
+
+body{
+	max-width: 80%;
+	margin:auto;
 }
 
-img
-{
+img{
 	margin-right:15px;
 	/*margin-bottom:;*/
 	max-width:85%;
@@ -22,7 +23,7 @@ p{
 }
 
 h1{
-	font-size:250%;
+	font-size:2.5vw;
 	/*text-decoration:;*/
 	text-indent:20px;
 }
@@ -33,20 +34,28 @@ h2{
 	text-indent:20px;
 
 }
+
 h3{
 	font-size:1.8em;
 	line-height:1em;
 	margin-bottom: 0.3em;
 }
+h4{
+	color:black;
+	background:lightgray;
+}
 
+body{
+	margin-top:30px;
+}
 
-/*li{
-}*/
+table{
+	color:white;
+}
 
-body{margin-top:30px;}
-ul{list-style:none;}
-table{color:white;}
-td{border:3px solid black;}
+td{
+	border:3px solid black;
+}
 
 .responsive{
 	width:100%;
@@ -55,24 +64,40 @@ td{border:3px solid black;}
 
 .leftcol{
 	width:20%;
-	height:100%;
-	text-align:center;
+	min-height:100%;
+	text-align:left;
 	float:left;
 	margin-right:2px;
-	line-height: 0.8em;
-	font-size:1.5em;
+	font-weight:bold;
+}
+
+.leftcol h1{
+	border-bottom-width:2px;
+	border-bottom-color:white;
+	border-bottom-style: dotted;
+	line-height: 1.3em
 }
 
 .leftcol li{
+	font-size:1.3vw;
+	line-height: 1.5vw;
 	margin-left:10px;
 	margin-right:10px;
-	margin-bottom:10px;
 }
 
-a{
-	text-decoration:none;
+.leftcol ul, .nobull{
+	list-style:none;
+}
+
+.leftcol a{
+	text-decoration: none;
+	text-decoration-skip: 1px;
+}
+
+.main a{
 	font-weight:600;
 	display:block;
+	text-decoration: underline;
 }
 
 hr{
@@ -142,48 +167,52 @@ position:absolute;
 	text-shadow:none;
 }
 
-@media only screen and (width:360px)
+@media only screen and (width:600px)
 	{
 	#note
 		{
 		width:315px;
 		}
 	}
-@media only screen and (max-width: 520px) {
-	/*ul{
-	}*/
+@media only screen and (max-width: 800px) {
 
 	.leftcol{
-	  	float:none;
-	  	border-bottom:2px solid white;
-	  	width:100%;
+		float:none;
+		border-bottom:2px solid white;
+		width:100%;
 	}
 	.leftcol ul{
-	  	border-top:2px solid white;
+		border-top:2px solid white;
 	}
 	.leftcol li{
-  		display:inline-table;
- 		margin-top:10px;
+		display:inline-table;
+		margin-top:10px;
 		margin-bottom:5px;
-	  	font-size:25px;
-	  	}
+		font-size:25px;
+	}
+	.main{
+		margin-left:10%;
+	}
+		
+	#note{
+		height:100%;
+		max-width:95%;
+	}
+
+	body{
+		max-width:100%
+	}
 
 	img{
 		border:none;
 		max-width:50%;
 		height:auto;
-		}
-	.main{
-		margin-left:10%;
-		}
+	}
 	p{
 		margin-left:5px;
-		}
+	}
+
 	h1{
 		text-indent:none;
-		}
-	#note{
-		height:100%;
-		max-width:95%;
-		}
+	}
 }
