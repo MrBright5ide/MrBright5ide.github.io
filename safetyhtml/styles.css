@@ -1,0 +1,38 @@
+html{
+	background-color:#acf;
+	font-family:"tahoma", serif;
+	font-size:150%;
+}
+
+body{
+	color:#206;
+	text-align:center;
+}
+
+h1{
+	font-size:3em;
+}
+
+#warning{
+	width:100%;
+	background-color:#206;
+	margin:0px;
+	color:white;
+}
+
+.white{
+	color:#fff;
+	font-weight:700;
+	font-size:125%;
+}
+
+hr{
+	border: 4px solid white;
+	border-radius: 8px;
+	width:1px;
+	margin:auto;
+}
+.last{
+	font-size:150%;
+	font-family:Lucida Sans Unicode;
+}
